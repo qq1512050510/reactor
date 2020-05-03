@@ -55,6 +55,12 @@ public class CallableTest {
             e.printStackTrace();
             System.out.println("获取结果超时");
         }
+        threadPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("test");
+            }
+        });
 
     }
 
