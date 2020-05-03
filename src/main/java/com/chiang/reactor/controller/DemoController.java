@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
 @RestController
 public class DemoController {
 
-    public Mono<String> test(){
+    public Mono<String> test() {
         return Mono.just(new String("hello World"));
     }
 }
